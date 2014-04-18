@@ -1,0 +1,8 @@
+Projet AC 
+Auteur: 
+  		Coulibaly Sidiki, David Esale, Alexi 
+compilation : la commande make dans le repertoire courant
+executable : bin/main
+fichies sources : src/*.c
+biblioteques : lib/*.a
+entete de focntion include/*.h

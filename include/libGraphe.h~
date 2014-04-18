@@ -1,0 +1,29 @@
+/*
+*
+*Auteurs: Coulibaly Sidiki, David Esale, Alexi
+*
+*/
+#ifndef LIBGRAPH_H_INCLUDED
+#define LIBGRAPH_H_INCLUDED
+#include "libListe.h"
+
+typedef struct typeGraphe{
+	int nbMaxSommets;
+	listeChainee* listesAdjacences;
+}typeGraphe;
+
+void creation(typeGraphe* graphe,int nbSommets);
+void insertionSommet(typeGraphe* g,char sommet);
+int indice(char sommet);
+void insertionArete(typeGraphe* g,char sommet,char voisin,int duree);
+void supprimerSommet(typeGraphe* g,char sommet);
+void supprimerArete(typeGraphe* g,char sommet,char voisin,int duree);
+void affichage(typeGraphe* g);
+int nombreSommet(typeGraphe* g);
+int fichierExiste(char *nomfichier);
+int sommetExiste(typeGraphe *g, char sommet);
+int areteExiste(typeGraphe* g, char sommet, char voisin, int duree);
+int lireEntier(FILE* fichier);
+typeGraphe* lecture(const char* nomFichier);
+void sauvegarde(typeGraphe* g, const char* nomFichier);
+#endif

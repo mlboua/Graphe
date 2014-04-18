@@ -1,0 +1,13 @@
+#nom, 'intiule'
+#------------------
+A, 'maconnerie', 7, -
+B, 'charpente', 4, A
+C, 'toiture', 2, -
+D, 'sanitaire', 6, A, C
+E, 'electricite', 2, B
+F, 'fenetre', 1, C, D, E
+G, 'abord', 1, D, E
+H, 'pafond', 1, F
+I, 'facade', 4, D, E
+J, 'peinture', 2, H
+K, 'finition', 1, G, H, I, J
